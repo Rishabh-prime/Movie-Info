@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+}
+.nav-Conatiner{
+    background-color:black ;
+    width: 100%;
+    height: 10rem;
+    margin-top: rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 500px cyan;
+    position: sticky;
+}
+
+#new {
+    background-color:rgb(13, 236, 228);
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-left: 3rem;
+}
+
+#movie {
+    text-overflow: 0 0 100px rgba(248, 252, 252, 0.5);
+    font-size: 2rem;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.searchBar{
+    display: flex;
+    margin-right:3rem ;
+    gap: 2rem;
+    
+}
+#name{
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(7, 93, 101) ;
+    width: 50rem;
+    border-radius: 5px;
+}
+#name::placeholder {
+     color:rgb(7, 93, 101) ;
+     padding-left: 10px;
+    
+}
+
+#search{
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(7, 93, 101);
+    background-color: whitesmoke;
+    width: 10rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 62em) {
+    /*  !! search bar ka code hai */
+    .searchBar{
+        gap: 1.5rem;
+    }
+    #name{
+        width:20rem;
+    }
+}
+
+/* !! ======================================= Hero section ka Style ======================================= */
+#iamgeconatiner{
+    width: 100%;
+    height:110vh;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#title{
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color:whitesmoke;
+    display: flex;
+    padding-top: 12rem;
+    padding-left: 3rem;
+}
+#description{
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    width: 50%;
+}
+
+#cast{
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    width: 50%;
+}
+
+/* !------- hovwer image cards--- */
+
+.conatiner1{
+    display: flex;
+    flex-direction: row;
+}
+.cards{
+    width: 20rem;
+    height:20rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    border-radius: 1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.cards:hover{
+    transform: scale(1);
+}
+.movie-poster img {
+    width: 100%; 
+    height:30rem ; 
+    border: 2px solid #ccc; 
+    border-radius: 0.5rem; 
+    filter: grayscale(50%); 
+}
+.movie-poster img:hover {
+    transform: scale(1.05); 
+    filter: grayscale(0%); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+/*  !! responsive-ness part*/
+@media (max-width: 62em) {
+    .cards{
+        width: 20rem;
+        height:20rem ;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        border-radius: 1.4rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    #iamgeconatiner{
+        width: 100%;
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+
+}
+
+@media (max-width: 42em) {
+
+    #name{
+        font-family: 'SF Pro Display', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        width: 20rem;
+    }
+    
+    #search{
+        
+        font-size: 15px;
+        font-weight: 700;
+        color:rgb(7, 93, 101);
+        width: 7rem;
+    }
+
+}
+@media (max-height: 400px) {
+    body {
+        background-color: black;
+    }
+    #imageContainer {
+        height: 55vh;
+    }
+   
+}
+
