@@ -10,9 +10,6 @@ A simple web application to search for movies , series using the OMDb API. The a
 - Dynamically update background image to the movie poster
 - Responsive design with media queries for different viewport heights
 
-## Demo
-
-![Movie Search Application Screenshot](./Assets/screenshot.png)
 
 ## Getting Started
 
