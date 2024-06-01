@@ -20,25 +20,7 @@ To run this project, you will need:
 - A web browser
 - Internet connection
 
-### Installation
 
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/yourusername/moviesearchapp.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd moviesearchapp
-    ```
-
-3. Open the `index.html` file in your web browser:
-
-    ```bash
-    open index.html
-    ```
 
 ## Usage
 
